@@ -1,0 +1,50 @@
+header {
+    background-color: purple;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+.search {
+    height: 64px;
+    margin: 2%;
+    background-color: blue;
+    width: 50%;
+}
+
+.buttons {
+    height: 100%;
+    background-color: red;
+    width: 164px;
+}
+
+.buttons > div {
+    background-color: green;
+    height: 18px;
+    margin: 10%;
+}
+
+@media (max-width: 700px) {
+    aside {
+        display: none;
+    }
+
+    main {
+        width: 100% !important;
+        background-color: brown;
+    }
+}
+
+@media (max-width: 700px) and (max-width:1200px) {
+    body > div > div {
+        flex-direction: column;
+    }
+
+    aside {
+        height: 30% !important;
+    }
+
+    .main {
+        height: 70% !important;
+    }   
+}

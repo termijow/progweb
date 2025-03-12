@@ -125,4 +125,7 @@ main > section > h3 {
     body {
         background-color: red;
     }
+    .nav1 > container:first-child {
+        display: none;
+    }
 }
