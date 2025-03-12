@@ -1,0 +1,122 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background: #F2F5F8;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    height: 100px;
+    padding: 5px 50px 20px 50px;
+}
+
+.nav1{
+    display: flex;
+    justify-content: space-between;
+}
+
+.container{
+    display: flex;
+}
+
+
+.container1 > img {
+    margin-right: 20px;
+}
+
+.container2{
+    display: flex;
+}
+
+.container2 > img {
+    margin-right: 20px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+nav > ul {
+    display: flex;
+    list-style: none;
+}
+
+
+nav > ul >li {
+    margin-left: 15px;
+    height: 30px;
+}
+
+.icon{
+    width: 25px;
+    height: 25px;
+}
+
+
+.profile{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.container > p {
+    margin: 0px 20px 0px 20px;
+}
+
+nav > ul > li:first-child{
+    border-bottom: 5px solid yellow;
+}
+
+
+.idioma{
+    padding: 5px 20px;
+    border: 1px solid blue;
+    border-radius: 5px;
+}
+
+
+.idioma:hover{
+    cursor: pointer;
+    background-color: cyan;
+}
+
+/* helo */
+main {
+    max-width: 80%;
+    margin: 40px auto;
+}
+
+main > section {
+    background-color: white;
+    width: 80%;
+    min-width: 80%;
+    min-height: 500px;
+}
+
+main > h2 {
+    margin-bottom: 10px;
+}
+
+main > section > h3 {
+    padding: 20px;
+    border-bottom: 1px solid black;
+}
+
+.button-select {
+    border: 1px solid black;
+    padding: 5px 10px;
+    height: 20px;
+}
+
+.buscar {
+    width: 150px;
+}
