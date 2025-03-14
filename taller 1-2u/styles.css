@@ -98,5 +98,31 @@ main {
     width: 32px;
     height: 32px;
     background-color: aliceblue;
+}
 
+footer {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    background-color: gray;
+}
+
+.imagen-footer {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+}
+
+.contenedor-izquierda {
+    display: flex;
+}
+
+.contebotones {
+    display: flex;
+}
+
+.contebotones > div {
+    width: 20px;
+    height: 20px;
+    background-color: red;
 }
