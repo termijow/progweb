@@ -1,0 +1,163 @@
+*{
+    
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #F2F5F8;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100px;
+    padding: 5px 50px 20px 50px;
+}
+
+
+
+.nav1{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.container{
+    
+    width: 200px;
+    height: 40px;
+}
+
+.container1 > img {
+    margin-right: 20px;
+
+}
+.container2 > img {
+    margin-right: 20px;
+}
+.container2 {
+    display: flex;
+    
+}
+.icon{
+    width: 25px;
+    height: 25px;
+    
+}
+.perfil {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav > ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+nav > ul > li {
+    margin-left: 20px;
+
+}
+
+nav > ul > li:first-child {
+
+    border-bottom: 2px solid yellow;
+}
+
+.idioma{
+    padding: 5px 20px;
+    border: 1px solid blue;
+    border-radius: 5px;
+}
+.idioma:hover{
+    cursor: pointer;
+    background: lightblue;
+}
+
+main {
+    width: 1200px;
+    margin: 20px auto;
+  
+}
+
+h2 {
+    color: gray;
+    margin-bottom: 20px;
+}
+
+.containerr {
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+
+
+.cajas {
+    gap: 10px;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.cajitas, .bar {
+    padding: 8px 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.cajitas {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.cards {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 35px;
+}
+
+.course {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    position: relative;
+    width: 350px;
+
+}
+
+.image {
+    height: 150px;
+  
+    background-color: rgb(178, 227, 255);
+}
+
+
+.content {
+    padding: 15px;
+}
+
+
+
+.menu-button {
+    top: 170px;
+    right: 30px;
+    font-size: 18px;
+    position: absolute;
+}
+
+footer{
+    justify-content: center;
+    display: flex;
+
+}
+
