@@ -119,10 +119,17 @@ footer {
 
 .contebotones {
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .contebotones > div {
+<<<<<<< HEAD
     width: 50px;
+=======
+    width: 60px;
+>>>>>>> 0349fc6 (aaaa)
     height: 20px;
     background-color: red;
+    margin: 30px;
 }
