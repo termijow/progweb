@@ -1,7 +1,6 @@
 const express = require('express');
 const cors = require('cors');
 const morgan = require('morgan');
-// const fetch = require('node-fetch'); // Instala con: npm install express cors morgan node-fetch
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -11,13 +10,15 @@ app.use(morgan('dev'));
 app.use(express.json());
 
 const users = [
-    { name: "juan", age: 20 },
-    { name: "pedro", age: 23 }
+    {
+    name: "juan", age: 20,
+},
+    { 
+    name: "pedro", age: 23
+}
 ];
 
-// Ruta principal que devuelve HTML con todo renderizado
 app.get('/', async (req, res) => {
-    try {
         const response = await fetch("https://jsonplaceholder.typicode.com/posts");
         const posts = await response.json();
 
@@ -26,7 +27,7 @@ app.get('/', async (req, res) => {
         <html lang="es">
         <head>
             <meta charset="UTF-8">
-            <title>Usuarios y Posts</title>
+            <title>Ejercicio Servidor</title>
 
         </head>
         <body>
@@ -34,7 +35,7 @@ app.get('/', async (req, res) => {
             <form id="formulario">
                 <input type="text" name="nombre" placeholder="Escribe tu nombre">
                 <input type="text" name="apellido" placeholder="Escribe tu apellido">
-                <input type="number" name="edad" placeholder="Edad">
+                <input type="number" name="edad" placeholder="edad">
                 <button type="submit">Enviar Datos</button>
             </form>
 
@@ -50,25 +51,30 @@ app.get('/', async (req, res) => {
                         <h3>${post.title}</h3>
                         <p>${post.body}</p>
                     </div>
-                `).join('')}
+                `)}
             </div>
 
             <script>
-                document.getElementById('formulario').addEventListener('submit', function(e) {
-                    e.preventDefault();
-                    const datos = new FormData(this);
-                    const obj = Object.fromEntries(datos.entries());
-                    alert('Datos enviados: ' + JSON.stringify(obj));
-                });
+
+const formulario = document.getElementById("formulario");
+
+formulario.addEventListener("submit", (event) => {
+    event.preventDefault()
+
+    // el valor del input
+
+    const nombre = event.target.nombre.value;
+    const apellido = event.target.apellido.value;
+    const edad = event.target.edad.value;
+    alert("a");
+    const titulo = document.getElementById("titulo");
+    })
+
             </script>
         </body>
         </html>
         `;
-
         res.send(html);
-    } catch (error) {
-        res.status(500).send("Error al obtener los posts.");
-    }
 });
 
 app.listen(PORT, () => {
